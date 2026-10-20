@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Menu & Reservations</title>
+        <!-- favicon -->
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png" />
+    <link rel="manifest" href="images/site.webmanifest">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/normalize-fwd.css" />
+    <link rel="stylesheet" href="styles/styles.css" />
+  </head>
+
+  <body>
+    <div class="site-wrapper">
+      <header>Menu & Reservations</header>
+
+      <main>
+        <h1>Menu & Reservations</h1>
+
+        <section>
+          <h2>Standard Lounge Admission & Popular Beverage Rates</h2>
+          <table class="menu-table">
+            <caption class="sr-only">
+              Café Rates & Menu
+            </caption>
+            <tbody>
+              <tr>
+                <th scope="row">
+                  <h3>1-Hour Cat Lounge Pass</h3>
+                  <p>
+                    Full access to the cat interaction lounge with sanitization
+                    kit
+                  </p>
+                </th>
+                <td class="price">$16.00</td>
+              </tr>
+              <tr>
+                <th scope="row">
+                  <h3>Lounge & Drink Combo</h3>
+                  <p>
+                    Full access to the cat interaction lounge with sanitization
+                    kit
+                  </p>
+                </th>
+                <td class="price">$16.00</td>
+              </tr>
+              <tr>
+                <th scope="row">
+                  <h3>Signature Meowcha Latte</h3>
+                  <p>
+                    Full access to the cat interaction lounge with sanitization
+                    kit
+                  </p>
+                </th>
+                <td class="price">$16.00</td>
+              </tr>
+              <tr>
+                <th scope="row">
+                  <h3>Vanilla Honey Cold Brew</h3>
+                  <p>
+                    16-hour slow steep local roast sweetened with Fraser Valley
+                    honey
+                  </p>
+                </th>
+                <td class="price">$16.00</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <figure
+          class="gallery-grid"
+          aria-label="Café Atmosphere & Treats Gallery"
+        >
+          <img
+            src="images/food-1.jpg"
+            alt="Iced chocolate coffee on a wooden coaster"
+            class="gallery-item item-1"
+          />
+          <img
+            src="images/food-2.jpg"
+            alt="Stacked chocolate macarons beside a hot coffee cup"
+            class="gallery-item item-2"
+          />
+          <img
+            src="images/food-3.jpg"
+            alt="Guest enjoying warm coffee while petting a tabby cat"
+            class="gallery-item item-4"            
+          />
+          <img
+            src="images/food-4.jpg"
+            alt="Refreshing sparkling pink grapefruit beverage"
+            class="gallery-item item-5"
+          />
+          <img
+            src="images/food-5.jpg"
+			alt="Slice of chocolate strawberry cake on a porcelain plate"
+            class="gallery-item item-3"
+          />
+        </figure>
+
+        <form action="#" method="post">
+          <h2>Reservation</h2>
+
+          <fieldset>
+            <legend><span class="number">1</span>Your basic info</legend>
+            <div class="form-row">
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="user-name" required />
+            </div>
+
+            <div class="form-row">
+              <label for="mail">Email:</label>
+              <input type="email" id="mail" name="user-email" required />
+            </div>
+
+            <div class="form-row">
+              <label for="number">Number of Guests</label>
+              <input type="number" id="number" name="user-number" required />
+            </div>
+
+            <div class="form-group">
+              <label for="booking-date">Preferred Date</label>
+              <input
+                type="date"
+                id="booking-date"
+                name="booking-date"
+                required
+              />
+            </div>
+
+            <label for="requests"
+              >Special Inquiries or Accessibility Requests</label
+            >
+            <textarea id="requests" name="user-requests"></textarea>
+
+            <input type="submit" value="Submit" />
+          </fieldset>
+        </form>
+      </main>
+
+      <footer id="contact" class="site-footer">
+        <p>Daisy Cat Coffee</p>
+        <div class="footer-text">
+          <p>
+            Address: 1042 Commercial Drive, Vancouver, BC V5L 3X1 <br />
+            Opening Hours: <br />
+            Monday – Friday: 10:00 AM – 7:00 PM <br />
+            Saturday – Sunday: 9:30 AM – 8:00 PM
+          </p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

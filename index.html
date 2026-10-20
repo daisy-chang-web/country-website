@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Country Website</title>
+    <!-- favicon -->
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png" />
+    <link rel="manifest" href="images/site.webmanifest">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/normalize-fwd.css" />
+    <link rel="stylesheet" href="styles/styles.css" />
+  </head>
+
+  <body>
+    <div class="site-wrapper">
+      <header class="site-header">
+        <nav class="site-navigation" id="site-navigation">
+          <ul class="nav-menu" id="header-menu">
+            <li>
+              <a href="index.html" class="icon-link" aria-label="Home">
+                <img
+                  src="images/home.svg"
+                  alt="home-icon"
+                  width="36"
+                  height="36"
+                  class="header-icon"
+                />
+              </a>
+            </li>
+
+            <li>
+              <a href="cats.html">
+                <img
+                  src="images/paw.svg"
+                  alt="paw-icon"
+                  width="36"
+                  height="36"
+                  class="header-icon"
+                />
+              </a>
+            </li>
+
+            <li>
+              <a href="menu.html">
+                <img
+                  src="images/food.svg"
+                  alt="utensils-icon"
+                  width="36"
+                  height="36"
+                  class="header-icon"
+                />
+              </a>
+            </li>
+
+            <li>
+              <a href="credits.html">
+                <img
+                  src="images/quotation.svg"
+                  alt="quotation-icon"
+                  width="36"
+                  height="36"
+                  class="header-icon"
+                />
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <main class="site-main">
+        <header class="page-header">
+          <video
+            class="hero-video"
+            autoplay
+            muted
+            loop
+            playsinline
+            poster="images/hero-poster.jpg"
+          >
+            <source src="media/banner.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+
+          <div class="hero-content">
+            <p>Vancouver</p>
+            <h1>Daisy Cat Coffee</h1>
+            <p>It's' Daisy's Imagination Space.</p>
+          </div>
+        </header>
+
+        <section id="about-me" class="section-about">
+          <div class="about-card">
+            <h2>Welcome to Your Urban Sanctuary</h2>
+            <p>Meet Our Resident Cats with coffee</p>
+            <div class="CTA">
+              <a href="menu.html"> Menu </a>
+              <a href="cats.html"> Cats </a>
+            </div>
+          </div>
+          <img src="images/cat-4.jpg" alt="orange Cat picture" />
+        </section>
+
+        <section id="testimonials" class="section-testimonials">
+          <h2 class="testimonials-title">Testimonials</h2>
+          <div class="testimonials-wrapper">
+            <blockquote class="customer">
+              <div class="customer-text">
+                <svg
+                  class="quote-icon"
+                  aria-hidden="true"
+                  viewBox="0 0 24 24"
+                  width="40"
+                  height="40"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"
+                  />
+                </svg>
+                <p>
+                  A cup of artisan coffee and a purring cat can cure almost
+                  anything.<br />-
+                </p>
+                <cite class="customer-name">Elena Vance, Founder</cite>
+              </div>
+            </blockquote>
+
+            <blockquote class="customer">
+              <div class="customer-text">
+                <svg
+                  class="quote-icon"
+                  aria-hidden="true"
+                  viewBox="0 0 24 24"
+                  width="40"
+                  height="40"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"
+                  />
+                </svg>
+                <p>
+                  The best therapy has four paws, soft whiskers, and a warm
+                  belly.<br />-
+                </p>
+                <cite class="customer-name">Daily Hive Vancouver</cite>
+              </div>
+            </blockquote>
+
+            <blockquote class="customer">
+              <div class="customer-text">
+                <svg
+                  class="quote-icon"
+                  aria-hidden="true"
+                  viewBox="0 0 24 24"
+                  width="40"
+                  height="40"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"
+                  />
+                </svg>
+                <p>
+                  A peaceful sanctuary where quiet minds and gentle cats find
+                  each other.<br />-
+                </p>
+                <cite class="customer-name">Local Guest Review</cite>
+              </div>
+            </blockquote>
+          </div>
+        </section>
+      </main>
+
+      <footer id="contact" class="site-footer">
+        <p>Daisy Cat Coffee</p>
+        <div class="footer-text">
+          <p>
+            Address: 1042 Commercial Drive, Vancouver, BC V5L 3X1 <br />
+            Opening Hours: <br />
+            Monday – Friday: 10:00 AM – 7:00 PM <br />
+            Saturday – Sunday: 9:30 AM – 8:00 PM
+          </p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
