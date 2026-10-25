@@ -224,10 +224,8 @@ a:active {
 }
 /* ------------------------ */
 
-/* Main
---------------------------------------------- */
 
-/* Home Page */
+/* Home Page--------------------------------------------------------- */
 
 .page-header {
   display: flex;
@@ -417,19 +415,21 @@ a:active {
   background-repeat: no-repeat;
   z-index: -1;
 }
-
+.overlay{
+    background-image: linear-gradient(
+    var(--secondary-cover),
+    var(--secondary-cover)
+  );
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  overflow: hidden;
+}
 .section-testimonials {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 5rem 10%;
   color: var(--bg-color);
-  background-image: linear-gradient(
-    var(--secondary-cover),
-    var(--secondary-cover)
-  );
-  -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px);
 }
 .testimonials-wrapper {
   display: flex;
@@ -471,7 +471,7 @@ a:active {
   }
 }
 
-/* Cats Page--------------------------------------- */
+/* Cats Page----------------------------------------------------------- */
 .display-none {
   display: none;
 }
@@ -567,7 +567,7 @@ a:active {
   }
 }
 
-/* Menu Page */
+/* Menu Page ------------------------------------------------------------*/
 .menu-header {
   display: flex;
   flex-direction: column;
@@ -795,7 +795,7 @@ input[type="submit"] {
   }
 }
 
-/* credits Page */
+/* credits Page ---------------------------------------------------------*/
 .white-background {
   background-color: var(--bg-color);
   margin: 5%;
@@ -808,7 +808,7 @@ input[type="submit"] {
   align-items: start;
   gap: 2rem;
 }
-.dark-text {
+.credits-title {
   color: var(--secondary-color);
   font-size: 4rem;
 }
@@ -833,7 +833,7 @@ input[type="submit"] {
     margin: 10%;
     padding: 10%;
   }
-  .dark-text {
+  .credits-title {
     font-size: 6rem;
   }
 }
