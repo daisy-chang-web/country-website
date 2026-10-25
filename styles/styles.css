@@ -23,7 +23,7 @@
   --bg-color: #f4f1ed;
   --primary-color: #d0bbaa;
   --secondary-color: #623e2a;
-  --secondary-cover: #623e2a66;
+  --secondary-cover: #3e160174;
 }
 
 /* Typography
@@ -125,7 +125,7 @@ a:active {
 /* Header
 --------------------------------------------- */
 .site-header {
-  background-color: #623e2a9f;
+  background-color: var(--secondary-color);
   backdrop-filter: blur(5px);
   display: flex;
   position: fixed;
@@ -254,7 +254,7 @@ a:active {
 
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: end;
   text-align: center;
   padding: 4rem 0;
 
@@ -280,6 +280,7 @@ a:active {
   .page-header p {
     padding: 0.5rem 5rem;
     border-radius: 50px;
+    font-size: 1.5rem;
   }
   .hero-content {
     justify-content: center;
@@ -470,7 +471,7 @@ a:active {
   }
 }
 
-/* Cats Page */
+/* Cats Page--------------------------------------- */
 .display-none {
   display: none;
 }
