@@ -97,6 +97,7 @@ img {
   object-fit: cover;
   object-position: center;
 }
+
 /* Links
 --------------------------------------------- */
 a,
@@ -314,6 +315,7 @@ a:active {
   }
 }
 
+/* about */
 .section-about {
   display: flex;
   flex-direction: column;
@@ -429,7 +431,7 @@ a:active {
   }
 }
 
-
+/* testimonials */
 .dark-bg{
   background-color: rgb(66, 26, 2);
 }
@@ -522,6 +524,29 @@ a:active {
   flex-direction: column;
   gap: 1rem;
 }
+@media (min-width: 62em) {
+  .cats-bg{
+  background-color: var(--primary-color);
+}
+  .section-manager {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+    padding: 5%;
+  }
+  .section-manager img{
+    width: auto;
+  }
+  .manager-bg{
+  border-radius:0;
+}
+  .manager-card{
+    max-width: 300px;
+  }
+}
+
+/* cats-list */
 .cats-grid {
   display: flex;
   flex-direction: column;
@@ -558,25 +583,6 @@ a:active {
 }
 
 @media (min-width: 62em) {
-  .cats-bg{
-  background-color: var(--primary-color);
-}
-  .section-manager {
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 5%;
-    padding: 5%;
-  }
-  .section-manager img{
-    width: auto;
-  }
-  .manager-bg{
-  border-radius:0;
-}
-  .manager-card{
-    max-width: 300px;
-  }
   .cats-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -842,8 +848,7 @@ input[type="submit"] {
   background-repeat: no-repeat;
   z-index: -1;
 }
-
-.white-background {
+.credits-bg {
   background-color: var(--bg-color);
   margin: 5%;
   padding: 5%;
@@ -876,7 +881,7 @@ input[type="submit"] {
 }
 
 @media (min-width: 50em) {
-  .white-background {
+  .credits-bg {
     margin: 10%;
     padding: 10%;
   }
