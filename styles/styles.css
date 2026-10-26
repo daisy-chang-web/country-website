@@ -20,10 +20,12 @@
 # Base
 --------------------------------------------------------------*/
 :root {
+  --white-color:#ffff;
   --bg-color: #f4f1ed;
   --primary-color: #d0bbaa;
   --secondary-color: #623e2a;
   --secondary-cover: #3e160174;
+  --text-color:#3b120100;
 }
 
 /* Typography
@@ -133,6 +135,16 @@ a:active {
   border: 0;
 }
 
+.overlay{
+    background-image: linear-gradient(
+    var(--secondary-cover),
+    var(--secondary-cover)
+  );
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  overflow: hidden;
+}
+
 /* Header
 --------------------------------------------- */
 .site-header {
@@ -237,7 +249,6 @@ a:active {
 
 
 /* Home Page--------------------------------------------------------- */
-
 .page-header {
   display: flex;
   flex-direction: column;
@@ -245,6 +256,7 @@ a:active {
   justify-content: center;
   width: 100%;
   height: 800px;
+  background-color: #030303;
 }
 
 .page-header video {
@@ -264,12 +276,14 @@ a:active {
   display: flex;
   flex-direction: column;
   justify-content: end;
+  align-items: center;
   text-align: center;
+  text-shadow: 0px 0px 20px rgba(0, 0, 0, 1);
   padding: 4rem 0;
 
   width: 100%;
   height: inherit;
-  color: var(--bg-color);
+  color: var(--white-color);
   background-image: linear-gradient(
     var(--secondary-cover),
     var(--secondary-cover)
@@ -279,16 +293,18 @@ a:active {
 .hero-content p {
   font-weight: 700;
   font-size: large;
+  padding: 20px;
+  border-radius: 50px;
+  background-color: rgba(79, 37, 2, 0.859);
+  width: max-content;
 }
 
 @media (min-width: 50em) {
   .page-header {
     height: 100vh;
   }
-
   .page-header p {
     padding: 0.5rem 5rem;
-    border-radius: 50px;
     font-size: 1.5rem;
   }
   .hero-content {
@@ -329,11 +345,7 @@ a:active {
 }
 .section-about img {
   position: relative;
-  display: block;
-  width: 100%;
   height: auto;
-  aspect-ratio: 1 / 1;
-  object-fit: cover;
   border-radius: 20px;
   z-index: 3;
 }
@@ -373,7 +385,7 @@ a:active {
   text-decoration: none;
 }
 
-@media (min-width: 50em) {
+@media (min-width: 80em) {
   .section-about {
     flex-direction: row;
     align-items: center;
@@ -396,6 +408,7 @@ a:active {
   .about-card {
     order: -1;
     width: max-content;
+    max-width: 30rem;
     gap: 1rem;
   }
   .about-card h2 {
@@ -414,50 +427,38 @@ a:active {
   }
 }
 
-.fixed-background {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background-image: url("../images/quote-bg.jpg");
-  background-size: cover;
-  background-position: top center;
-  background-repeat: no-repeat;
-  z-index: -1;
-}
-.overlay{
-    background-image: linear-gradient(
-    var(--secondary-cover),
-    var(--secondary-cover)
-  );
-  -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px);
-  overflow: hidden;
+
+.dark-bg{
+  background-color: rgb(66, 26, 2);
 }
 .section-testimonials {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 5rem 10%;
-  color: var(--bg-color);
+  color: var(--white-color);
 }
 .testimonials-wrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 2rem;
+  gap: 1rem;
 }
 .testimonials-title {
   padding-bottom: 2rem;
 }
-
-.customer-text {
+.customer {
   display: flex;
   flex-direction: column;
-  justify-content: start;
   align-items: start;
-  gap: 1rem;
+  gap: 1rem; 
+  padding:50px 20px;
+  border-radius: 20px;
+  margin:0;
+}
+.customer svg{
+  width:24px;
+  height: 24px;
 }
 
 @media (min-width: 50em) {
@@ -465,20 +466,14 @@ a:active {
     height: 100vh;
     justify-content: center;
     gap: 3rem;
-    padding: 1rem;
+    padding: 10%rem;
   }
   .testimonials-wrapper {
     flex-direction: row;
-    flex-wrap: wrap;
     gap: auto;
   }
   .customer {
-    width: calc(25% - 1rem);
-  }
-  .customer-text {
     flex-direction: column;
-    justify-content: space-between;
-    height: 10rem;
   }
 }
 
@@ -827,6 +822,20 @@ input[type="submit"] {
 
 
 /* credits Page ---------------------------------------------------------*/
+.fixed-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--dark-color);
+  background-image: url("../images/quote-bg.jpg");
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
 .white-background {
   background-color: var(--bg-color);
   margin: 5%;
