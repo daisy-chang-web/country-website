@@ -612,6 +612,7 @@ a:active {
   flex-direction: column;
   justify-content: center;
   text-align: center;
+  font-size: 4rem;
 
   width: 100%;
   height: inherit;
@@ -625,11 +626,15 @@ a:active {
   .menu-header {
     height: 100vh;
   }
+  .menu-title{
+    padding:0 10%;
+    font-size: 8rem;
+  }
 }
 
 /* menu-table */
 .menu-table-section{
-  padding:0;
+  padding: 0 ;
 }
 .menu-table-wrapper{
   padding: 10%;
@@ -638,7 +643,6 @@ a:active {
 .menu-table-wrapper h2 {
   font-size: 3rem;
   margin: 1rem 0;
-  color: var(--secondary-color);
 }
 .menu-table {
   text-align: left;
