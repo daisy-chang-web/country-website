@@ -106,102 +106,103 @@
       </header>
 
       <main>
-        <header class="menu-header">
+        <header id="hero" class="menu-header">
           <img
             src="images/menu-banner.jpg"
             alt="delicated desserts and coffee beside the window"
           />
-          <h1 class="menu-banner-content">Menu & Reservations</h1>
+          <h1 class="menu-title">Menu & Reservations</h1>
         </header>
 
-        <section class="menu-table-wrapper padding-general white-bg">
-          <h2>Standard Lounge Admission & Popular Beverage Rates</h2>
-          <table class="menu-table">
-            <caption class="sr-only">
-              Café Rates & Menu
-            </caption>
-            <tbody>
-              <tr>
-                <th scope="row">
-                  <h3>1-Hour Cat Lounge Pass</h3>
-                  <p>
-                    Full access to the cat interaction lounge with sanitization
-                    kit
-                  </p>
-                </th>
-                <td class="price">$16</td>
-              </tr>
-              <tr>
-                <th scope="row">
-                  <h3>Lounge & Drink Combo</h3>
-                  <p>
-                    Full access to the cat interaction lounge with sanitization
-                    kit
-                  </p>
-                </th>
-                <td class="price">$16</td>
-              </tr>
-              <tr>
-                <th scope="row">
-                  <h3>Signature Meowcha Latte</h3>
-                  <p>
-                    Full access to the cat interaction lounge with sanitization
-                    kit
-                  </p>
-                </th>
-                <td class="price">$16</td>
-              </tr>
-              <tr>
-                <th scope="row">
-                  <h3>Vanilla Honey Cold Brew</h3>
-                  <p>
-                    16-hour slow steep local roast sweetened with Fraser Valley
-                    honey
-                  </p>
-                </th>
-                <td class="price">$16</td>
-              </tr>
-            </tbody>
-          </table>
+        <section id="menu-table" class="menu-table-section">
+          <div class="menu-table-wrapper">
+            <h2>Standard Lounge Admission & Popular Beverage Rates</h2>
+            <table class="menu-table">
+              <caption class="sr-only">
+                Café Rates & Menu
+              </caption>
+              <tbody>
+                <tr>
+                  <th scope="row">
+                    <h3>1-Hour Cat Lounge Pass</h3>
+                    <p>
+                      Full access to the cat interaction lounge with
+                      sanitization kit
+                    </p>
+                  </th>
+                  <td class="price">$16</td>
+                </tr>
+                <tr>
+                  <th scope="row">
+                    <h3>Lounge & Drink Combo</h3>
+                    <p>
+                      Full access to the cat interaction lounge with
+                      sanitization kit
+                    </p>
+                  </th>
+                  <td class="price">$16</td>
+                </tr>
+                <tr>
+                  <th scope="row">
+                    <h3>Signature Meowcha Latte</h3>
+                    <p>
+                      Full access to the cat interaction lounge with
+                      sanitization kit
+                    </p>
+                  </th>
+                  <td class="price">$16</td>
+                </tr>
+                <tr>
+                  <th scope="row">
+                    <h3>Vanilla Honey Cold Brew</h3>
+                    <p>
+                      16-hour slow steep local roast sweetened with Fraser
+                      Valley honey
+                    </p>
+                  </th>
+                  <td class="price">$16</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <figure
+            class="gallery-grid"
+            aria-label="Café Atmosphere & Treats Gallery"
+          >
+            <img
+              src="images/food-1.jpg"
+              alt="Iced chocolate coffee on a wooden coaster"
+              class="gallery-item item-1"
+            />
+            <img
+              src="images/food-2.jpg"
+              alt="Stacked chocolate macarons beside a hot coffee cup"
+              class="gallery-item item-2"
+            />
+            <img
+              src="images/food-3.jpg"
+              alt="Guest enjoying warm coffee while petting a tabby cat"
+              class="gallery-item item-3"
+            />
+            <img
+              src="images/food-4.jpg"
+              alt="Refreshing sparkling pink grapefruit beverage"
+              class="gallery-item item-4"
+            />
+            <img
+              src="images/food-5.jpg"
+              alt="Slice of chocolate strawberry cake on a porcelain plate"
+              class="gallery-item item-5"
+            />
+            <img
+              src="images/food-6.jpg"
+              alt="Slice of chocolate strawberry cake on a porcelain plate"
+              class="gallery-item item-6"
+            />
+          </figure>
         </section>
 
-        <figure
-          class="gallery-grid"
-          aria-label="Café Atmosphere & Treats Gallery"
-        >
-          <img
-            src="images/food-1.jpg"
-            alt="Iced chocolate coffee on a wooden coaster"
-            class="gallery-item item-1"
-          />
-          <img
-            src="images/food-2.jpg"
-            alt="Stacked chocolate macarons beside a hot coffee cup"
-            class="gallery-item item-2"
-          />
-          <img
-            src="images/food-3.jpg"
-            alt="Guest enjoying warm coffee while petting a tabby cat"
-            class="gallery-item item-3"
-          />
-          <img
-            src="images/food-4.jpg"
-            alt="Refreshing sparkling pink grapefruit beverage"
-            class="gallery-item item-4"
-          />
-          <img
-            src="images/food-5.jpg"
-            alt="Slice of chocolate strawberry cake on a porcelain plate"
-            class="gallery-item item-5"
-          />
-          <img
-            src="images/food-6.jpg"
-            alt="Slice of chocolate strawberry cake on a porcelain plate"
-            class="gallery-item item-6"
-          />
-        </figure>
-
-        <section class="form-section">
+        <section id="form" class="form-section">
           <h2 class="sr-only">Reservation Form</h2>
           <div class="menu-fixed-background"></div>
           <form action="#" method="post" class="form">
@@ -232,10 +233,8 @@
             </div>
 
             <div class="form-row">
-            <label for="requests"
-              >Special Inquiries</label
-            >
-            <textarea id="requests" name="user-requests"></textarea>
+              <label for="requests">Special Inquiries</label>
+              <textarea id="requests" name="user-requests"></textarea>
             </div>
 
             <input type="submit" value="Submit" />

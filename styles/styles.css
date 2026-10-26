@@ -597,25 +597,23 @@ a:active {
   justify-content: center;
   width: 100%;
   height: 70vh;
+  text-shadow: 0px 0px 20px rgba(0, 0, 0, 1);
+  background-color: var(--secondary-color);
 }
 .menu-header img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: left;
   position: relative;
+    object-position: left;
 }
-.menu-banner-content {
+.menu-title{
   position: absolute;
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  padding: 4rem 0;
 
   width: 100%;
   height: inherit;
-  color: var(--bg-color);
+  color: var(--white-color);
   background-image: linear-gradient(
     var(--secondary-cover),
     var(--secondary-cover)
@@ -627,10 +625,14 @@ a:active {
   }
 }
 
-.padding-general {
-  padding: 10%;
+/* menu-table */
+.menu-table-section{
+  padding:0;
 }
-
+.menu-table-wrapper{
+  padding: 10%;
+  background-color: var(--primary-color);
+}
 .menu-table-wrapper h2 {
   font-size: 3rem;
   margin: 1rem 0;
@@ -654,14 +656,12 @@ a:active {
   padding-bottom: 1rem;
 }
 @media (min-width: 50em) {
-  .padding-general {
-    padding: 8%;
-  }
   .menu-table-wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 2rem;
+    padding: 8%;
   }
   .menu-table-wrapper h2 {
     font-size: 4rem;
@@ -710,6 +710,7 @@ a:active {
   }
 }
 
+/* gallery */
 .gallery-grid {
   margin: 0;
   display: grid;
@@ -723,6 +724,7 @@ a:active {
     gap: 2rem;
     background-color: var(--primary-color);
     padding-bottom: 2rem;
+    padding:0 2rem 2rem;
   }
   .gallery-item{
     border-radius: 20px;
@@ -746,9 +748,8 @@ a:active {
     grid-column: 5;
     grid-row: 1 / span 2;
   }
-
 }
-
+/* form */
 .form-section {
   content: "";
   display: block;
